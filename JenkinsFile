@@ -1,0 +1,26 @@
+pipline {
+    agent any
+
+    stages {
+
+        stage('Checkout') {
+
+            steps {
+                echo 'checkout from repo'
+            }
+        }
+
+        stage('Test') {
+
+            steps {
+                echo 'test'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'build'
+            }
+        }
+    }
+}
